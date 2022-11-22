@@ -103,7 +103,7 @@ docker exec -it auto-xe-reg sqlplus pdbadmin/<your_password>@XEPDB1
 ```
 ## Connecting to the Database Outside of the container using SQL*Plus:
 ```
-qlplus sys/<your password>@//localhost:1521/XE as sysdba
+sqlplus sys/<your password>@//localhost:1521/XE as sysdba
 ```
 ## Connecting to the Database via SQL Dev:
 ![](./docs/sql_dev_docker.png)
