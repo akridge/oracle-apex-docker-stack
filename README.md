@@ -1,4 +1,4 @@
-# ESD Oracle APEX Docker Stack
+# Oracle APEX Docker Stack
 ### Deploy a complete Oracle database & APEX stack on Docker using Docker Compose. 
 
 ## Overview: 
