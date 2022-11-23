@@ -16,9 +16,17 @@
 ***
 # Prerequisites
 - Have Docker Installed
-- Create an account & test login to Oracle Image Registry
+- <mark>Create an account & test login to Oracle Image Registry</mark>
   - [Oracle Image/Container Registry](https://container-registry.oracle.com/ords/f?p=113:10)
-
+### In a command(cmd) window, Log into Oracle Registry
+```
+docker login container-registry.oracle.com
+```
+### Pull the latest Oracle XE & ORDS Images from the Oracle Registry
+```
+docker pull container-registry.oracle.com/database/express:latest
+docker pull container-registry.oracle.com/database/ords:latest
+```
 ## Version Info
 Note: Its best to review details on Oracle container registry website, but pulling latest images as of (11-22-2022) from oracle will have the following versions:
 
@@ -75,17 +83,13 @@ networks:
   default:
     name: ords-database-network
 ```
-### Step 4: In a command(cmd) window, Log into Oracle Registry
-```
-docker login container-registry.oracle.com
-```
-### Step 5: In CMD, navigate to the folder with the updated "docker-compose.yml" file
+### Step 4: In CMD, navigate to the folder with the updated "docker-compose.yml" file (note replace path with your path)
 ```
 cd/
 
 cd C:\Users\FIRSTNAME.LASTNAME\Desktop\esd-oracle-apex-docker-stack\oracle-apex-offical
 ```
-### Step 6: Run Docker Compose File
+### Step 5: Run Docker Compose File
 ```
 docker compose up
 ```
@@ -148,11 +152,14 @@ Examples:
 
 ---
 # Alternative Install
-### Alt Install (1): Use Community Docker Images, by using the "oracle-apex-community" directory of files with the same steps as above
+### <mark>Alt Install (1)</mark>: Use Community Docker Images, by using the <mark>"oracle-apex-community" directory</mark> of files with the same steps as above
 Various versions and options available. I would recommended to use the latest version(regular) if seeking a balance of image size and features. Slim version is not compatiable with Oracle Apex. 
 - https://hub.docker.com/r/gvenzl/oracle-xe
 
-### Alt Install (2): Build your own image - coming soon
+### <mark>Alt Install (2)</mark>: Build your own image - coming soon
+
+Requires downloading and staging the software. <mark>Coming soon!</mark>
+
 ---
 
 ## Docker Terms
