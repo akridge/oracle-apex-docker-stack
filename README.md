@@ -79,9 +79,6 @@ volumes:
     external: false
   ords-config-reg:
     name: ords-config-reg
-networks:
-  default:
-    name: ords-database-network
 ```
 ### Step 4: In CMD, navigate to the folder with the updated "docker-compose.yml" file (note replace path with your path)
 ```
