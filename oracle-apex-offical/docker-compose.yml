@@ -26,6 +26,3 @@ volumes:
     external: false
   ords-config-reg:
     name: ords-config-reg
-networks:
-  default:
-    name: ords-database-network
